@@ -28,7 +28,7 @@
             android:id="@+id/sem_year"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Semester Year"
+            android:hint="Semester Session (i.e Spring 2020)"
             android:inputType="textCapWords"
             android:textColor="#363A43"
             android:textColorHint="#7A8089" />
@@ -53,6 +53,24 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+    android:paddingHorizontal="20dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/class_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Class Day"
+        android:inputType="textCapWords"
+        android:textColor="#363A43"
+        android:textColorHint="#7A8089" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:paddingHorizontal="20dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
@@ -60,10 +78,10 @@
         android:layout_marginTop="16dp">
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/class_day"
+            android:id="@+id/class_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Class Day"
+            android:hint="Class Time"
             android:inputType="textCapWords"
             android:textColor="#363A43"
             android:textColorHint="#7A8089" />
@@ -71,6 +89,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/submit_semester"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,6 +98,7 @@
         />
 
     <TextView
+        android:id="@+id/return_to_startscreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"

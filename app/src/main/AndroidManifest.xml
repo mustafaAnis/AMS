@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AMS"
         tools:targetApi="31">
         <activity
+            android:name=".SemesterScreen"
+            android:exported="false">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AddStudents"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SemesterList"
             android:exported="false">
             <meta-data

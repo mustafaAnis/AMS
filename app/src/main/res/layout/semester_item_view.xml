@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="match_parent"
+    layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:id="@+id/semesterCard"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/semesterNo"
+            android:text="1"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:paddingHorizontal="5dp"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_weight="3"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/semester_Year"
+                android:text="Semester Year"
+                style="@style/TextAppearance.AppCompat.Headline"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subject"
+                android:text="Subject"
+                style="@style/TextAppearance.AppCompat.Body1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/class_day"
+                android:text="Class Day"
+                style="@style/TextAppearance.AppCompat.Body1"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/class_time"
+                android:text="Class time"
+                style="@style/TextAppearance.AppCompat.Body1"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
